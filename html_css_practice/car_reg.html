@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Vehicle Registration Form</h2>
+        <form action="#" method="POST">
+            <!-- Owner's Name -->
+            <label for="owner">Owner's Name:</label>
+            <input type="text" id="owner" name="owner" required>
+
+            <!-- Vehicle Registration Number -->
+            <label for="registration">Vehicle Registration Number:</label>
+            <input type="text" id="registration" name="registration" required>
+
+            <!-- Engine Number -->
+            <label for="engine">Engine Number:</label>
+            <input type="text" id="engine" name="engine" required>
+
+            <!-- CC -->
+            <label for="cc">Engine CC:</label>
+            <input type="number" id="cc" name="cc" required>
+
+            <!-- Dropdown for selecting district -->
+            <label for="district">Select District:</label>
+            <select id="district" name="district" required>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Chittagong">Chittagong</option>
+                <option value="Sylhet">Sylhet</option>
+                <option value="Rajshahi">Rajshahi</option>
+                <option value="Khulna">Khulna</option>
+            </select>
+
+            <!-- Radio Buttons for Vehicle Type -->
+            <label>Type of Vehicle:</label>
+            <div class="radio-group">
+                <input type="radio" id="car" name="vehicle_type" value="Car" required>
+                <label for="car">Car</label>
+
+                <input type="radio" id="motorcycle" name="vehicle_type" value="Motorcycle">
+                <label for="motorcycle">Motorcycle</label>
+
+                <input type="radio" id="truck" name="vehicle_type" value="Truck">
+                <label for="truck">Truck</label>
+            </div>
+
+            <!-- Text Area for Additional Details -->
+            <label for="details">Additional Details:</label>
+            <textarea id="details" name="details" rows="4" cols="50"></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
